@@ -12,6 +12,11 @@
 //
 //  HW: using CodingKeys try to get/parse the most nested key at the same level of root model
 
+
+
+// Update your Pokemon App to utilize a generic network layer. 12/28/2022 HW
+
+
 import UIKit
 
 class ViewController: UIViewController {
