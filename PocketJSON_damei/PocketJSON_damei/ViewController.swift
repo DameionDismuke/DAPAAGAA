@@ -36,7 +36,7 @@ class ViewController: UIViewController {
       
     //Generic Side
     
-    
+    /*
     func decode<T: Codable>(_ file:String) -> T {
         
         
@@ -55,7 +55,7 @@ class ViewController: UIViewController {
         }
     }
     
-    
+    */
     
         //THIS IS THE BOTTOM!
     
@@ -65,7 +65,7 @@ class ViewController: UIViewController {
     // JSON RIGHT HERE!!!!!
     
     func parseJSON(){
-        /*guard let path1 = Bundle.main.path(forResource: "SampleJSONGlaceon", ofType: "json")
+        guard let path1 = Bundle.main.path(forResource: "SampleJSONGlaceon", ofType: "json")
         else {
             return
         }
@@ -73,7 +73,7 @@ class ViewController: UIViewController {
         guard let path2 = Bundle.main.path(forResource: "SampleJSONDragon", ofType: "json")
         else {
             return
-        }*/
+        }
         
         let url1 = URL(fileURLWithPath: path1)
         let url2 = URL(fileURLWithPath: path2)
@@ -106,11 +106,11 @@ class ViewController: UIViewController {
         
         //print(monster is Monster)
         
-        print("The most nested key, which is three layers deep, and a multiple way tied with other third level nests is \(monster!.gameIndices![1].version.name)!")
+        print("The most nested key, which is three layers deep, and a multiple way tied with other third level nests is \(monster?.gameIndices![1].version.name)!")
         
         
         //printing Dragon Typing JSON
-        print("This is the Dragon Typing JSON. The most nested key, which is three layers deep, and a multiple way tied with other third level nests is my brother's favorite ghost: \(dragonTyping!.pokemon![18].pokemonNext)!")
+        print("This is the Dragon Typing JSON. The most nested key, which is three layers deep, and a multiple way tied with other third level nests is my brother's favorite ghost: \(dragonTyping?.pokemon![18].pokemonNext)!")
         
         /*for x in monster!.gameIndices
         {

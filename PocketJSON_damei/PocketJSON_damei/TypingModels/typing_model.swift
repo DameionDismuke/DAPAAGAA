@@ -22,7 +22,7 @@ struct DragonTyping: Codable {
     let pokemon: [Pokemon]?
     let typingMoves: [TypingMoves]?
     let damageRelations: DamageRelations?
-    let gameIndices: [GameIndices]?
+    let typingGameIndices: TypingGameIndices?
     let generation: Generation?
     let moveDamageClass: MoveDamageClass
     
